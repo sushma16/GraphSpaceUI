@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript'>
+  $(window).load(function(){<!--from  w  w  w.  java2s.  c  om-->
+    $(function () {
+      $("table#boostrap-practice-table").on("click", ".remove", function () {
+        $(this).closest('tr').remove();
+      });
+    });
+    $(function () {
+      $(".show_tip").tooltip({
+        container: 'body'
+      });
+    });
+    function Highlight(button) {
+      $(".Highlight").removeClass("Highlight");
+      $(button).addClass("Highlight");
+    }
+    $(document).click(function () {
+      $('.tooltip').remove();
+      $('[title]').tooltip();
+    });
+    $(document).ready(function(){
+      $('#MyButton').click(function(){
+        //
+        document.getElementById("scroller").innerHTML = "";
+        $("#boostrap-practice-table").empty();
+      });
+    });
+  });
+
+  $(document). ready(function(){
+    $("#groups").hide();
+    $("#AllNotifications"). click(function(){
+      $("#notifications"). load ("load.html");
+      $("#groups").hide();
+    });
+    $("#NewNotifications"). click(function(){
+      $("#notifications"). load ("load1.html");
+      $("#groups").show();
+    });
+    $("#myGroup1"). click(function(){
+      $("#notifications"). load ("load3.html");
+      $("#groups").show();
+    });
+    $("#group2"). click(function(){
+      $("#notifications"). load ("load4.html");
+      $("#groups").show();
+    });
+    $("#myPublicGraphs"). click(function(){
+      $("#notifications"). load ("load5.html");
+      $("#groups").show();
+    });
+
+  });
+
+  </script>
+
+</head>
+    <div id = "notifications"  class = "col-md" class = "panel panel-default">
+      <table class="table table-bordered table-curved fontsize"
+      id="boostrap-practice-table">
+      <tbody>
+        <tr>
+          <td class = "boxed-group" style="font-weight:bold"> <u>Notifications for Group1</td>
+          <td></td>
+          <td>
+          </td>
+        </tr>
+        <tr>
+          <td>User 1 updated Graph 2</td>
+          <td>15 minutes ago</td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>User 2 updated Graph 2</td>
+          <td>18 minutes ago</td>
+          <td>
+          </td>
+        </tr>
+
+        <tr>
+          <td>User 3 updated Graph 2</td>
+          <td>21 minutes ago</td>
+          <td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="clearfix"></div>
+    <ul id = "scroller" class="pagination pull-right">
+      <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+    </ul>
+    <table class="table table-bordered table table-bordered table-curved myTable"
+    id="boostrap-practice-table">
+    <tbody>
+      <tr>
+        <td class = "boxed-group" style="font-weight:bold"> <u>Notifications for Group2</td>
+        <td></td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>User 6 updated Graph 10</td>
+        <td>15 minutes ago</td>
+        <td>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User 12 updated Graph 5</td>
+        <td>18 minutes ago</td>
+        <td>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User 15 updated Graph 9</td>
+        <td>21 minutes ago</td>
+        <td>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User 15 updated Graph 3</td>
+        <td>21 minutes ago</td>
+        <td>
+        </td>
+      </tr>
+
+      <tr>
+        <td>User 9 updated Graph 10</td>
+        <td>21 minutes ago</td>
+        <td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="clearfix"></div>
+  <ul id = "scroller" class="pagination pull-right">
+    <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+  </ul>
+
+  <table class="table table-bordered table-curved"
+  id="boostrap-practice-table">
+  <tbody>
+    <tr>
+      <td class = "boxed-group" style="font-weight:bold"> <u>Notifications for Group3</td>
+      <td></td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>User 1 updated Graph 2</td>
+      <td>15 minutes ago</td>
+      <td>
+      </td>
+    </tr>
+
+    <tr>
+      <td>User 2 updated Graph 2</td>
+      <td>18 minutes ago</td>
+      <td>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+<div class="clearfix"></div>
+<ul id = "scroller" class="pagination pull-right">
+  <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+</body>
+</html>

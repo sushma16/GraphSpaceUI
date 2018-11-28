@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript'
+  <script type='text/javascript'>
+  $(document).ready(function(){<!--from  w  w  w.  java2s.  c  om-->
+    $(function () {
+      $("table#boostrap-practice-table").on("click", ".remove", function () {
+        $(this).closest('tr').remove();
+      });
+    });
+    $(function () {
+      $(".show_tip").tooltip({
+        container: 'body'
+      });
+    });
+    function Highlight(button) {
+      $(".Highlight").removeClass("Highlight");
+      $(button).addClass("Highlight");
+    }
+    $(document).click(function () {
+      $('.tooltip').remove();
+      $('[title]').tooltip();
+    });
+    $(document).ready(function(){
+      $('#MyButton').click(function(){
+        //
+        document.getElementById("scroller").innerHTML = "";
+        $("#boostrap-practice-table").empty();
+      });
+    });
+  });
+
+  $(document). ready(function(){
+    $("#AllNotifications"). click(function(){
+      $("#notifications"). load ("load.html");
+    });
+    $("#NewNotifications"). click(function(){
+      $("#notifications"). load ("load1.html");
+    });
+    $("#myGroup1"). click(function(){
+      $("#notifications"). load ("load3.html");
+    });
+    $("#group2"). click(function(){
+      $("#notifications"). load ("load4.html");
+    });
+    $("#myPublicGraphs"). click(function(){
+      $("#notifications"). load ("load5.html");
+    });
+
+  });
+
+  </script>
+</head>
+
+<table class="table table-bordered table-curved"
+id="boostrap-practice-table">
+<tbody>
+    <tr>
+      <td class = "boxed-group" style="font-weight:bold"> <u>Notifications for Group1</td>
+      <td></td>
+      <td>
+      </td>
+    </tr>
+    <td>User 1 updated Graph 2</td>
+    <td>15 minutes ago</td>
+    <td>
+      <button title="" type="button"
+      class="btn remove"
+      data-original-title="Remove from list">
+      <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+    </button>
+  </td>
+
+<tr>
+  <td>User 2 updated Graph 2</td>
+  <td>18 minutes ago</td>
+  <td>
+    <button title="" type="button"
+    class="btn remove"
+    data-original-title="Remove from list">
+    <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+  </button>
+</td>
+</tr>
+
+<tr>
+<td>User 3 updated Graph 2</td>
+<td>21 minutes ago</td>
+<td>
+  <button title="" type="button"
+  class="btn remove"
+  data-original-title="Remove from list">
+  <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="clearfix"></div>
+<ul id = "scroller" class="pagination pull-right">
+<li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+<li class="active"><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+
+<table class="table table-bordered table-curved"
+id="boostrap-practice-table">
+<tbody>
+  <tr>
+    <td class = "boxed-group" style="font-weight:bold"> <u>Notifications for Group2</td>
+    <td></td>
+    <td>
+    </td>
+  </tr>
+    <td>User 6 updated Graph 10</td>
+    <td>15 minutes ago</td>
+    <td>
+      <button title="" type="button"
+      class="btn remove"
+      data-original-title="Remove from list">
+      <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+    </button>
+  </td>
+
+<tr>
+  <td>User 12 updated Graph 5</td>
+  <td>18 minutes ago</td>
+  <td>
+    <button title="" type="button"
+    class="btn remove"
+    data-original-title="Remove from list">
+    <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+  </button>
+</td>
+</tr>
+
+<tr>
+<td>User 15 updated Graph 9</td>
+<td>21 minutes ago</td>
+<td>
+  <button title="" type="button"
+  class="btn remove"
+  data-original-title="Remove from list">
+  <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+</button>
+</td>
+</tr>
+
+<tr>
+<td>User 15 updated Graph 3</td>
+<td>21 minutes ago</td>
+<td>
+  <button title="" type="button"
+  class="btn remove"
+  data-original-title="Remove from list">
+  <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+</button>
+</td>
+</tr>
+
+<tr>
+<td>User 9 updated Graph 10</td>
+<td>21 minutes ago</td>
+<td>
+  <button title="" type="button"
+  class="btn remove"
+  data-original-title="Remove from list">
+  <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="clearfix"></div>
+<ul id = "scroller" class="pagination pull-right">
+<li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+<li class="active"><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+
+<button title="" type="button"
+class="btn remove" id = "MyButton"
+data-original-title="Remove from list">
+<i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+</button>
+<table class="table table-bordered table-curved"
+id="boostrap-practice-table">
+<tbody>
+  <tr>
+    <td class = "boxed-group" style="font-weight:bold"> <u>Notifications for Group2</td>
+    <td></td>
+    <td>
+    </td>
+  </tr>
+    <td>User 1 updated Graph 2</td>
+    <td>15 minutes ago</td>
+    <td>
+      <button title="" type="button"
+      class="btn remove"
+      data-original-title="Remove from list">
+      <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+    </button>
+  </td>
+
+<tr>
+  <td>User 2 updated Graph 2</td>
+  <td>18 minutes ago</td>
+  <td>
+    <button title="" type="button"
+    class="btn remove"
+    data-original-title="Remove from list">
+    <i class="fas fa-check"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == ghost -->
+  </button>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<div class="clearfix"></div>
+<ul id = "scroller" class="pagination pull-right">
+<li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
+<li class="active"><a href="#">1</a></li>
+<li><a href="#">2</a></li>
+<li><a href="#">3</a></li>
+<li><a href="#">4</a></li>
+<li><a href="#">5</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+</ul>
+
+
+<div id = "haha" class="blankslate blankslate-spacious blankslate-large">
+  <svg height="40" class="octicon octicon-bell blankslate-icon" viewBox="0 0 14 16" version="1.1" width="35" aria-hidden="true"><path fill-rule="evenodd" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path></svg>
+
+    <h3>No new notifications.</h3>
+    <p>Depending on <a href="/settings/notifications">your notification settings</a>, you’ll see updates here for your conversations in watched repositories.</p>
+</div>
